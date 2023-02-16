@@ -7,77 +7,469 @@ body {
     line-height: 1.8em;
   }
 
+header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
   .container-sm h1{
     margin: 10px;
 
   }
 
-  img{
-    margin-top: 20px;
-    padding: 15px;
-  }
-
-  h1, h2{
+  h1{
     text-transform: uppercase;
     margin: 1em 0;
-    color: #a93e4a;
+    color: #fff;
     font-family: 'Shadows Into Light', cursive;
     }
-.redesSociales{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-    .fab {
-        border: 1px solid #f47e8e;
-        border-radius: 50%;
-        font-size: 1.5em;   
-        width: 1.5em;
-        height: 1.5em;
-        line-height: 1.5em;
-        margin: 5px;
-        text-align: center;
-      }
-      
-      a .fab {
-        color: #f47e8e;
-      }
+
+    h2{
+      font-size: 48px;
+      text-align: center;
+      padding: 20px 0;
+      text-transform: uppercase;
+      margin: 1em 0;
+      color: #a93e4a;
+      font-family: 'Shadows Into Light', cursive;
+    }
+
 .card-header{
     background-color: #fdb3bd;
 }
 .card-body{
     background-color: #f1d4d7;
 }
-footer {
-    padding: 1em 1.5em;
-    background: black;
-    color: white;
-    text-align: right;
-    padding-top: 15px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   }
-   
-footer a{
-    text-decoration: none;
-    color: antiquewhite;
+
+
+.inicio{
+  background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+  url(../fondo.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.inicio .contenido-banner{
+  padding: 20px;
+  background-color: #1e2326;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+.inicio .contenido-banner img{
+  margin-top: 40px;
+  border: 3px solid #F36095;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+  margin-top: 40px;
+  font-size: 42px;
+}
+.inicio .contenido-banner h2{
+  font-size: 15px;
+  font-weight: normal;
+  color: #fff;
+}
+.inicio .contenido-banner .redesSociales a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: .3s;
+}
+.inicio .contenido-banner .redesSociales a:hover{
+  background-color: #F36095;
 }
 
-footer .fab{
-    border: 1px solid #c3f8ff;
+
+/* Seccion Sobre mi*/
+.sobreMi{
+  padding: 50px 20px;
+}
+
+
+.sobreMi .contenido-seccion, .skills .contenido-seccion, .container-sm{
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sobreMi .contenido-seccion p{
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.sobreMi .contenido-seccion p span{
+  color: #F36095;
+  font-weight: bold;
+}
+
+.sobreMi .fila, .skills .fila{
+  display: flex;
+}
+
+.sobreMi .fila .col{
+  width: 50%;
+}
+
+.sobreMi .fila .col h3, .skills .fila .col h3 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-family: 'Shadows Into Light', cursive;
+  color: #a93e4a;
+}
+
+.sobremi .fila .col ul{
+  list-style: none;
+}
+.sobreMi .fila .col ul li{
+  margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+  display: inline-block;
+  color: #F36095;
+  width: 130px;
+}
+.sobreMi .fila .col ul li span{
+  background-color: #F36095;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.sobreMi .fila .col .contenedor-intereses{
+  display: flex;
+  flex-wrap: wrap;
+}
+.sobreMi .fila .col .contenedor-intereses .interes{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}.sobreMi .fila .col .contenedor-intereses .interes:hover{
+  background-color: #F36095;
+}
+.sobreMi .fila .col .contenedor-intereses .interes i{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.sobreMi button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #131517;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #131517;
+  position: relative;
+  z-index: 10;
+}
+
+.sobreMi button:hover{
+  background-color: #F36095;
+  color: #fff;
+}
+/* Seccion Skills*/
+
+
+.skills .fila .col h3{
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.skills .fila .col{
+  width: 50%;
+  padding: 0 20px;
+}
+.skills .skill > span{
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+  height: 8px;
+  width: 80%;
+  background-color: #fdb3bd;
+  position: relative;
+  margin-bottom: 30px;
+}
+.skills .skill .progreso{
+  background-color: #F36095;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+}
+.skills .skill .barra-skill span{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #F36095;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+.skills .skill .javascript{
+  width: 0%;
+  animation: 2s javascript forwards;
+}
+@keyframes javascript {
+  0%{width: 0%;}
+  100%{width: 50%;}
+}
+.skills .skill .htmlcss{
+  width: 0%;
+  animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+  0%{width: 0%;}
+  100%{width: 89%;}
+}
+
+.skills .skill .git{
+  width: 0%;
+  animation: 2s git forwards;
+}
+@keyframes git {
+  0%{width: 0%;}
+  100%{width: 55%;}
+}
+
+.skills .skill .wordpress{
+  width: 0%;
+  animation: 2s wordpress forwards;
+}
+@keyframes wordpress {
+  0%{width: 0%;}
+  100%{width: 70%;}
+}
+
+.skills .skill .bootstrap{
+  width: 0%;
+  animation: 2s bootstrap forwards;
+}
+@keyframes bootstrap {
+  0%{width: 0%;}
+  100%{width: 60%;}
+}
+
+.skills .skill .comunicacion{
+  width: 0%;
+  animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+  0%{width: 0%;}
+  100%{width: 80%;}
+}
+
+.skills .skill .trabajo{
+  width: 0%;
+  animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+  0%{width: 0%;}
+  100%{width: 75%;}
+}
+
+.skills .skill .creatividad{
+  width: 0%;
+  animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+  0%{width: 0%;}
+  100%{width: 99%;}
+}
+
+.skills .skill .dedicacion{
+  width: 0%;
+  animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+  0%{width: 0%;}
+  100%{width: 89%;}
+}
+
+.skills .skill .proyect{
+  width: 0%;
+  animation: 2s proyect forwards;
+}
+@keyframes proyect {
+  0%{width: 0%;}
+  100%{width: 49%;}
+}
+
+/* Seccion Contacto*/
+.contacto{
+  background-image: url(../contacto_img.png);
+  background-color: #565454;
+  color: #fff;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+.contacto .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.contacto h2{
+  font-size: 48px;
+  text-align: center;
+  padding: 20px 0;
+  color: #fdb3bd;
+}
+.contacto .fila{
+  display: flex;
+}
+.contacto .col{
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #252A2E;
+  color: #fff;
+  font-size: 18px;
+}
+
+.contacto button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fdb3bd;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fdb3bd;
+  position: relative;
+  z-index: 10;
+}
+
+
+.contacto button:hover{
+  background-color: #F36095;
+  color: #fff;
+}
+
+.contacto .col img{
+  width: 100%;
+}
+.contacto .col .info{
+  position: absolute;
+  top: 40%;
+  background-color: #252A2E;
+  padding: 20px;
+  max-width: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+  list-style: none;
+}
+.contacto .col .info ul li{
+  margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+  color: #F36095;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer{
+  margin-top: 30px;
+  background-color: #252A2E;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer .redes{
+  margin-bottom: 5px;
+}
+footer .redes a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 35px 5px 10px 5px;
+  font-size: 20px;
+  transition: .3s;
+}
+footer p{
+  margin: 0;
+  padding: 0;
+}
+  footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #F36095;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
     border-radius: 50%;
-    font-size: 1.5em;   
-    width: 1.5em;
-    height: 1.5em;
-    line-height: 1.5em;
-    margin: 5px;
-    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
 }
 
-footer a .fab {
-    color: #c3f8ff;
+@media screen and (max-width:700px){
+  .sobremi .fila{
+      display: block;
   }
+  .sobremi .fila .col{
+      width: fit-content;
+  }
+
+  .skills .fila{
+      display: block;
+  }
+  .skills .fila .col{
+      width: 100%;
+  }
+  .skills .fila .col .barra-skill{
+      width: 100%;
+  }
+
+  .contacto .fila{
+      display: block;
+  }
+  .contacto .fila .col{
+      width: 100%;
+  }
+}
