@@ -26,9 +26,9 @@ Levantar un servidor virtual
 
     /root
 	    /img    
-		/style
-			/css
-         styles.css
+	    /style
+	          /css
+                    styles.css
 	    index.html
             funciones.js
 
