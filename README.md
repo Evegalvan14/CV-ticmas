@@ -30,7 +30,7 @@ Levantar un servidor virtual
 			/css
          styles.css
 	    index.html
-      funciones.js
+            funciones.js
 
 
 ## Deploy
